@@ -1,0 +1,25 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+<script>
+    'use strict';
+
+    const bigText = "One: 'Hi Mary.' Two: 'Oh, hi.' One: 'That's great. Well, you better get going. You don't want to be late.' Two: 'I'm doing alright. How about you?'";
+    const regExp1 = /'/g;
+    console.log(bigText.replace(regExp1, "\"")); //Задание 1 - замена одинарных ковычек на двойные
+    const regExp2 = /(\B'|'\B)/g;
+    console.log(bigText.replace(regExp2, "\"")); //Задание 2 - замена одинарных ковычек на двойные исключая апострофы
+  
+</script>
+</body>
+
+</html>
